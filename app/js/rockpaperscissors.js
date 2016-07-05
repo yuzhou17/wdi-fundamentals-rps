@@ -1,4 +1,6 @@
-
+////////////////////////////////////////////////
+/*   Provided Code - Please Don't Edit   */
+////////////////////////////////////////////////
 'use strict';
 
 function getInput() {
@@ -16,16 +18,16 @@ function randomPlay() {
     }
 }
 
-
+////////////////////////////////////////////////
+/*           Write Your Code Below            */
+////////////////////////////////////////////////
 function getPlayerMove(move) {
     move || getInput();
-
     return move;
 }
 
 function getComputerMove(move) {
     move || randomPlay();
-
     return move;
 }
 
@@ -42,7 +44,6 @@ function getWinner(playerMove,computerMove) {
     } else {
         winner = "computer";
     }
-
     return winner;
 }
 
@@ -68,7 +69,7 @@ function playToFive() {
         console.log('Player chose '+playerMove+' and Computer chose '+computerMove);
         console.log('The score is '+playerWins+' to '+computerWins);
     }
- 
+
     return [playerWins, computerWins];
 }
 
